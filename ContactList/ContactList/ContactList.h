@@ -13,7 +13,7 @@
 @interface ContactList : NSObject
 
 
-@property (strong, nonatomic) NSMutableArray *storedContact;
+@property (strong, nonatomic) NSMutableArray *storedContacts;
 
 
 -(void)addContact:(Contact *)newContact;

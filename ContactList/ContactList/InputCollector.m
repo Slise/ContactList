@@ -18,7 +18,9 @@
     char inputChars[255];
     fgets(inputChars, 255, stdin);
     
-    return [NSString stringWithCString:inputChars encoding:NSASCIIStringEncoding];
+    NSString *inputString=[NSString stringWithCString:inputChars encoding:NSASCIIStringEncoding];
+    inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    return inputString;
     
 }
 

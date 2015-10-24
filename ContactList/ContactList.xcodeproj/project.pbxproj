@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		93B5A9D41BD729D900325D9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A9D31BD729D900325D9D /* main.m */; };
-		93B5A9DC1BD72ACF00325D9D /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A9DB1BD72ACF00325D9D /* InputCollector.m */; settings = {ASSET_TAGS = (); }; };
-		93B5A9DF1BD73EE900325D9D /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A9DE1BD73EE900325D9D /* Contact.m */; settings = {ASSET_TAGS = (); }; };
-		93B5A9E21BD74D0100325D9D /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A9E11BD74D0100325D9D /* ContactList.m */; settings = {ASSET_TAGS = (); }; };
+		93B5A9DC1BD72ACF00325D9D /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A9DB1BD72ACF00325D9D /* InputCollector.m */; };
+		93B5A9DF1BD73EE900325D9D /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A9DE1BD73EE900325D9D /* Contact.m */; };
+		93B5A9E21BD74D0100325D9D /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B5A9E11BD74D0100325D9D /* ContactList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -253,6 +253,7 @@
 				93B5A9D91BD729D900325D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
