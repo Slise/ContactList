@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InputCollector.h"
 
 @class Contact;
 
@@ -17,5 +18,7 @@
 
 
 -(void)addContact:(Contact *)newContact;
+-(void)listAllContacts;
+
 
 @end

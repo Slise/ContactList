@@ -16,9 +16,10 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
       
         InputCollector* inputCollector = [[InputCollector alloc] init];
-        Contact* userContact = [[Contact alloc] init];
         ContactList* storedInfo = [[ContactList alloc] init];
         
+        
+         
         int quit = 1;
         
         while (quit == 1) {
@@ -27,10 +28,17 @@ int main(int argc, const char * argv[]) {
             NSString* userInput =  [inputCollector inputForPrompt:prompt];
             
             if ([userInput isEqualToString:@"new"]) {
+                
+                Contact* userContact = [[Contact alloc] init];
                 userContact.name = [inputCollector inputForPrompt:@"type full name:\n"];
                 userContact.email = [inputCollector inputForPrompt:@"type email address:"];
+                
+                [storedInfo addContact:userContact];
+                
             }
             else if ([userInput isEqualToString:@"list"]) {
+                [storedInfo listAllContacts];
+                
                 
             }
             else if ([userInput isEqualToString:@"quit"]){

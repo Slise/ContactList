@@ -7,6 +7,7 @@
 //
 
 #import "ContactList.h"
+#import "Contact.h"
 
 @implementation ContactList
 
@@ -16,13 +17,27 @@
     if (self) {
         
         _storedContacts = [[NSMutableArray alloc] init];
+        
     }
     return self;
 }
 
 -(void)addContact:(Contact *)newContact {
     
-    
+    [self.storedContacts addObject:newContact];
 }
+
+-(void)listAllContacts {
+    int index;
+    for (Contact *contact in _storedContacts) {
+        NSLog(@"%d: %@, %@", index, contact.name , contact.email);
+        index++;
+    }
+}
+
+//
+//for (Type newVariable in expression ) {
+//    statement(s);
+//}
 
 @end
